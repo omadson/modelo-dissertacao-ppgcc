@@ -20,13 +20,17 @@
 % INICIO DAS CUSTOMIZACOES PARA A UNIVERSIDADE XXX
 % ---
 
+\newcommand{\imprimirinstituicaocapa}{INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO CEARÁ}
+
+
+
 \ProvidesPackage{abntex2novopacote}[2014/09/01 Criacao desta customizacao do abnTeX2]
 
 % alterando a capa
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
-    \ABNTEXchapterfont\Large UNIVERSIDADE QUE TORNA OS DOCUMENTOS AINDA MAIS ESTRANHOS
+    \ABNTEXchapterfont\Large \imprimirinstituicaocapa
 
     \vspace*{1cm}
 
@@ -53,7 +57,7 @@
 
 \renewcommand{\folhaderostocontent}{
 \begin{center}
-{\ABNTEXchapterfont\Large UNIVERSIDADE QUE TORNA OS DOCUMENTOS AINDA MAIS ESTRANHOS}
+{\ABNTEXchapterfont\Large \imprimirinstituicaocapa}
 
     \vspace*{1cm}
 

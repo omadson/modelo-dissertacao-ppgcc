@@ -90,34 +90,38 @@
 	\else
 		Citado #1 vezes nas páginas #2.%
 	\fi}%
+% Define firulas
+\newcommand{\imprimirareaRotulo}{Área de Concentração:}
+\newcommand{\imprimirarea}{<Área de Concentração>}
 % ---
 
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{<Título da Dissertação>}
-\autor{<Nome do Autor>}
-\local{Fortaleza -- CE}
-\data{2015, Agosto}
-\orientador{<Nome do Orientador>}
-%\coorientador{<Nome do Coorientador>}
-\instituicao{%
-  Instituto Federal de Educação, Ciência e Tecnologia do Ceará -- IFCE
-  \par
-  Programa de Pós-Graduação em Ciência da Computação -- PPGCC}
-\tipotrabalho{Dissertação de Mestrado}
-% O preambulo deve conter o tipo do trabalho, o objetivo, 
-% o nome da instituição e a área de concentração 
+% \titulo{<Título da Dissertação>}
+% \autor{<Nome do Autor>}
+% \local{Fortaleza -- CE}
+% \data{2015, Agosto}
+% \orientador{<Nome do Orientador>}
+% %\coorientador{<Nome do Coorientador>}
+% \instituicao{%
+%   Instituto Federal de Educação, Ciência e Tecnologia do Ceará -- IFCE
+%   \par
+%   Programa de Pós-Graduação em Ciência da Computação -- PPGCC}
+% \tipotrabalho{Dissertação de Mestrado}
+% % O preambulo deve conter o tipo do trabalho, o objetivo, 
+% % o nome da instituição e a área de concentração 
 
-\newcommand{\imprimirareaRotulo}{Área de Concentração:}
-\newcommand{\imprimirarea}{<Área de Concentração>}
+% \newcommand{\imprimirareaRotulo}{Área de Concentração:}
+% \newcommand{\imprimirarea}{<Área de Concentração>}
 
 
-\preambulo{%
-Tese submetida ao Programa de Pós-Graduação em Ciência da Computação, do Instituto Federal do Ceará, como requisito parcial para obtenção do grau de Mestre em Ciência da Computação.
-\newline \newline \imprimirareaRotulo~\imprimirarea}
+% \preambulo{%
+% Tese submetida ao Programa de Pós-Graduação em Ciência da Computação, do Instituto Federal do Ceará, como requisito parcial para obtenção do grau de Mestre em Ciência da Computação.
+% \newline \newline \imprimirareaRotulo~\imprimirarea}
 %\newline \newline \imprimirorientadorRotulo~\imprimirorientador}
 
+\include{informacoes}
 
 % ---
 
@@ -611,7 +615,7 @@ elementum}
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
-\bibliography{abntex2-modelo-references}
+\bibliography{references}
 
 % ----------------------------------------------------------
 % Glossário

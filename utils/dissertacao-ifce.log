@@ -1,0 +1,54 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.21)  18 APR 2016 17:26
+entering extended mode
+**"C:/Users/Madson Dias/Dropbox/Mestrado/mestrado_madson/Dissertação/modelo-d
+issertacao-ppgcc/utils/dissertacao-ifce.sty"
+
+("C:/Users/Madson Dias/Dropbox/Mestrado/mestrado_madson/Dissertação/modelo-di
+ssertacao-ppgcc/utils/dissertacao-ifce.sty"
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+
+LaTeX Warning: You have requested package `',
+               but the package provides `abntex2novopacote'.
+
+Package: abntex2novopacote 2014/09/01 Criacao desta customizacao do abnTeX2
+
+! LaTeX Error: \imprimircapa undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \renewcommand{\imprimircapa}
+                                 {%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \folhaderostocontent undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \renewcommand{\folhaderostocontent}
+                                        {
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+! Emergency stop.
+<*> ...ssertacao-ppgcc/utils/dissertacao-ifce.sty"
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 28 strings out of 493634
+ 831 string characters out of 3132789
+ 52604 words of memory out of 3000000
+ 3511 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 7i,0n,6p,251b,14s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
