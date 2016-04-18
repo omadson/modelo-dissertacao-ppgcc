@@ -57,11 +57,11 @@
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
 
-\graphicspath{ {figures/graphs} {figure/images}}  % Inclusão dos paths para imagens
+\graphicspath{ {figures/graphs/} {figures/images/}}  % Inclusão dos paths para imagens
 
 \usepackage{microtype} 			% para melhorias de justificação
 % ---
-\usepackage{utils/dissertacao-ifce}
+\usepackage{utils/ifce-dissertation}
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
@@ -124,7 +124,7 @@
 % \newline \newline \imprimirareaRotulo~\imprimirarea}
 %\newline \newline \imprimirorientadorRotulo~\imprimirorientador}
 
-\include{informacoes}
+\include{informations}
 
 % ---
 
@@ -215,37 +215,37 @@
 %     \includepdf{fig_ficha_catalografica.pdf}
 % \end{fichacatalografica}
 
-\begin{fichacatalografica}
-	\sffamily
-	\vspace*{\fill}					% Posição vertical
-	\begin{center}					% Minipage Centralizado
-	\fbox{\begin{minipage}[c][8cm]{13.5cm}		% Largura
-	\small
-	\imprimirautor
-	%Sobrenome, Nome do autor
+% \begin{fichacatalografica}
+% 	\sffamily
+% 	\vspace*{\fill}					% Posição vertical
+% 	\begin{center}					% Minipage Centralizado
+% 	\fbox{\begin{minipage}[c][8cm]{13.5cm}		% Largura
+% 	\small
+% 	\imprimirautor
+% 	%Sobrenome, Nome do autor
 	
-	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
-	\imprimirlocal, \imprimirdata-
+% 	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+% 	\imprimirlocal, \imprimirdata-
 	
-	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
+% 	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
 	
-	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+% 	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
 	
-	\hspace{0.5cm}
-	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
-	\imprimirdata.}\\
+% 	\hspace{0.5cm}
+% 	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+% 	\imprimirdata.}\\
 	
-	\hspace{0.5cm}
-		1. Palavra-chave1.
-		2. Palavra-chave2.
-		2. Palavra-chave3.
-		I. Orientador.
-		II. Universidade xxx.
-		III. Faculdade de xxx.
-		IV. Título 			
-	\end{minipage}}
-	\end{center}
-\end{fichacatalografica}
+% 	\hspace{0.5cm}
+% 		1. Palavra-chave1.
+% 		2. Palavra-chave2.
+% 		2. Palavra-chave3.
+% 		I. Orientador.
+% 		II. Universidade xxx.
+% 		III. Faculdade de xxx.
+% 		IV. Título 			
+% 	\end{minipage}}
+% 	\end{center}
+% \end{fichacatalografica}
 % ---
 
 % ---
@@ -291,7 +291,7 @@
 \begin{folhadeaprovacao}
 
     \begin{center}
-    \includegraphics[width=2.5cm]{brasao_republica} \\
+    \includegraphics[width=2.5cm]{brasao_republica.jpg} \\
     \vspace{.5cm}
     {\ABNTEXchapterfont\large\imprimirinstituicao}
     \vspace{1cm}

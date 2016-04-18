@@ -20,25 +20,25 @@
 % INICIO DAS CUSTOMIZACOES PARA A UNIVERSIDADE XXX
 % ---
 
-\newcommand{\imprimirinstituicaocapa}{INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO CEARÁ}
-
-
-
 \ProvidesPackage{abntex2novopacote}[2014/09/01 Criacao desta customizacao do abnTeX2]
 
 % alterando a capa
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
-    \ABNTEXchapterfont\Large \imprimirinstituicaocapa
+    \includegraphics[width=2.5cm]{logo-ifce-sem-nome.pdf} \\
+    \vspace{1cm}
+    \ABNTEXchapterfont\imprimirinstituicaocapa \\
+    \ABNTEXchapterfont\imprimirdepartamento \\
+    \ABNTEXchapterfont\imprimirprograma 
 
-    \vspace*{1cm}
+    \vspace*{4cm}
 
     {\ABNTEXchapterfont\large\imprimirautor}
 
-    \vfill
+    \vspace*{2cm}
     \begin{center}
-    \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
+    \ABNTEXchapterfont\bfseries\large\imprimirtitulo
     \end{center}
     \vfill
 
@@ -57,9 +57,9 @@
 
 \renewcommand{\folhaderostocontent}{
 \begin{center}
-{\ABNTEXchapterfont\Large \imprimirinstituicaocapa}
+%{\ABNTEXchapterfont\large \imprimirinstituicaocapa}
 
-    \vspace*{1cm}
+%    \vspace*{1cm}
 
 {\ABNTEXchapterfont\large\imprimirautor}
 
