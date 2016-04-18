@@ -1,8 +1,8 @@
-*.brf
-*.idx
-*.lof
-*.lot
-*.toc
-*.bbl
-*.log
-*.aux
+.brf
+.idx
+.lof
+.lot
+.toc
+.bbl
+.log
+.aux
