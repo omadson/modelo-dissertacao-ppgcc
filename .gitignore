@@ -3,3 +3,6 @@
 .lof
 .lot
 .toc
+.bbl
+.log
+.aux
