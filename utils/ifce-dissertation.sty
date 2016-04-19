@@ -17,10 +17,23 @@
 %%
 
 % ---
+% Modificações do Madson
+% ---
+
+% Comando novo para área de concentração
+\newcommand{\area}[1]{\def\area{#1}}
+\newcommand{\imprimirarea}{\area}
+
+% ---
+% Fim das modificações do Madson
+% ---
+
+
+% ---
 % INICIO DAS CUSTOMIZACOES PARA A UNIVERSIDADE XXX
 % ---
 
-\ProvidesPackage{abntex2novopacote}[2014/09/01 Criacao desta customizacao do abnTeX2]
+\ProvidesPackage{utils/ifce-dissertation}[2014/09/01 Criacao desta customizacao do abnTeX2]
 
 % alterando a capa
 \renewcommand{\imprimircapa}{%
@@ -100,6 +113,33 @@
 }
 
 \makeatother
+
+
+
+% -----
+% Não modificar as linhas abaixo!
+% -----
+\newcommand{\imprimirareaRotulo}{Área de Concentração:}
+\instituicao{%
+  Instituto Federal de Educação, Ciência e Tecnologia do Ceará -- IFCE
+  \par
+  Programa de Pós-Graduação em Ciência da Computação -- PPGCC}
+\tipotrabalho{Dissertação de Mestrado}
+\preambulo{%
+Dissertação submetida ao Programa de Pós-Graduação em Ciência da Computação, do Instituto Federal do Ceará, como requisito parcial para obtenção do grau de Mestre em Ciência da Computação.
+\newline \newline \imprimirareaRotulo~\imprimirarea}
+\local{Fortaleza -- CE}
+\newcommand{\imprimirinstituicaocapa}{INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO CEARÁ}
+\newcommand{\imprimirdepartamento}{DEPARTAMENTO DE TELEMÁTICA}
+\newcommand{\imprimirprograma}{PROGRAMA DE PÓS-GRADUAÇÃO EM CIÊNCIA DA COMPUTAÇÃO}
+\data{\today}
+
+
+
+
+
+% -----
+
 
 % ---
 % FIM DAS CUSTOMIZACOES PARA O PPGCC / IFCE
