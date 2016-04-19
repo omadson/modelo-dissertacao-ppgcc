@@ -7,7 +7,7 @@ tem como finalidade facilitar a escrita da dissertação dos mestrandos do [Prog
 
 Faça um clone do projeto, edite no seu editor preferido e compile.
 ```
-git clone git clone https://github.com/omadson/modelo-dissertacao-ppgcc
+git clone https://github.com/omadson/modelo-dissertacao-ppgcc
 ```
 
 ## Funcionalidades
