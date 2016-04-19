@@ -1,17 +1,20 @@
-\chapter{Lorem ipsum dolor sit amet}
-% ---
-
+\chapter{Lorem ipsum dolor sit amet}\label{cap:exampleChapter}
 % ---
 \section{Aliquam vestibulum fringilla lorem}
 % ---
 
 \lipsum[1]
-\begin{figure}\label{fig:logo-ifce-sem-nome}
+
+% Exemplo de inclusão de figura
+\begin{figure}[h]\label{fig:logo-ifce-sem-nome}
 	\begin{center}
 		\includegraphics[width=4cm]{logo-ifce-sem-nome}
 		\caption{Logomarca do IFCE sem nome}
 	\end{center}
 \end{figure}
-
+% ------
 \lipsum[2-3]
 
+\includetable{exampleTable.tex} % Exemplo de inclusão de tabela
+
+\lipsum[2-3]
