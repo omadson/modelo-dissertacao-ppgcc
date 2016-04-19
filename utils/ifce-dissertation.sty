@@ -44,6 +44,10 @@
 \newcommand{\imprimirinstituicaoprofessorC}{\instituicaoprofessorC}
 
 \newcommand{\includetable}[1]{\input{tables/#1}}
+
+\renewcommand\assinatura[1]{%
+  {\vspace{.35cm}\centering\noindent\rule{10cm}{0.3pt}\\#1\\\vspace{.35cm}}
+}
 %
 
 
@@ -144,12 +148,12 @@
 % -----
 \newcommand{\imprimirareaRotulo}{Área de Concentração:}
 \instituicao{%
-  Instituto Federal de Educação, Ciência e Tecnologia do Ceará -- IFCE
+  Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE)
   \par
-  Programa de Pós-Graduação em Ciência da Computação -- PPGCC}
+  Programa de Pós-Graduação em Ciência da Computação (PPGCC)}
 \tipotrabalho{Dissertação de Mestrado}
 \preambulo{%
-Dissertação submetida ao Programa de Pós-Graduação em Ciência da Computação, do Instituto Federal do Ceará, como requisito parcial para obtenção do grau de Mestre em Ciência da Computação.
+Dissertação submetida ao Programa de Pós-Graduação em Ciência da Computação do Instituto Federal de Educação, Ciência e Tecnologia do Ceará, como requisito parcial para obtenção do grau de Mestre em Ciência da Computação.
 \newline \newline \imprimirareaRotulo~\imprimirarea}
 \local{Fortaleza -- CE}
 \newcommand{\imprimirinstituicaocapa}{INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO CEARÁ}
