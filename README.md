@@ -11,9 +11,7 @@ git clone git clone https://github.com/omadson/modelo-dissertacao-ppgcc
 ```
 
 ## Funcionalidades
-
- - O projeto conta com algumas facilidades, tais como arquivo contendo todas as informações em separado,
-dessa maneira você não se repete (DRY - don't repeat yourself).
- - Diretórios específicos para capítulos,
-anexos, apêndices e figuras. Dessa maneira você tem um projeto mais organizado.
+O projeto conta com algumas facilidades:
+ - Arquivo contendo todas as informações em separado, dessa maneira você não se repete (DRY - don't repeat yourself).
+ - Diretórios específicos para capítulos, anexos, apêndices e figuras. Dessa maneira você tem um projeto mais organizado.
 
