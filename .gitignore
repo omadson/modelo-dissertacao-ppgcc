@@ -7,3 +7,7 @@
 *.log
 *.aux
 *.blg
+*.acn
+*.glo
+*.ist
+
