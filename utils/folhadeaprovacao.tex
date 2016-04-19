@@ -27,9 +27,32 @@ da Computação do Instituto Federal de Educação, Ciência e Tecnologia do Cea
 examinadora:
 
    \assinatura{\textbf{\imprimirorientadorRotulo~\imprimirorientador} \\ Instituto Federal de Educação, Ciência e Tecnologia do Ceará -- IFCE}
-   \assinatura{\textbf{\imprimirnomeprofessorA}  \\ \imprimirinstituicaoprofessorA}
-   \assinatura{\textbf{\imprimirnomeprofessorB}  \\ \imprimirinstituicaoprofessorB}
-   \assinatura{\textbf{\imprimirnomeprofessorC}  \\ \imprimirinstituicaoprofessorC}
+
+   \if \imprimircoorientador
+    
+   \else
+    \assinatura{\textbf{\imprimircoorientadorRotulo~\imprimircoorientador}  \\ Instituto Federal de Educação, Ciência e Tecnologia do Ceará -- IFCE}
+   \fi
+
+   \if \nomeprofessorA \instituicaoprofessorA
+    
+   \else
+    \assinatura{\textbf{\imprimirnomeprofessorA}  \\ \imprimirinstituicaoprofessorA}
+   \fi
+
+   \if \nomeprofessorB
+    
+   \else
+    \assinatura{\textbf{\imprimirnomeprofessorB}  \\ \imprimirinstituicaoprofessorB}
+   \fi
+   
+   \if \nomeprofessorC
+    
+   \else
+    \assinatura{\textbf{\imprimirnomeprofessorC}  \\ \imprimirinstituicaoprofessorC}
+   \fi
+   
+   
    %\assinatura{\textbf{Professor}  \\ Instituto Federal do Ceará (IFCE)}
       
    \begin{center}
