@@ -15,3 +15,8 @@ O projeto conta com algumas facilidades:
  - Arquivo contendo todas as informações em separado, dessa maneira você não se repete (DRY - don't repeat yourself).
  - Diretórios específicos para capítulos, anexos, apêndices e figuras. Dessa maneira você tem um projeto mais organizado.
 
+## Veja também
+
+Verifique o [Modelo de apresentação PPGCC](https://github.com/vitorcarvalhoml/modelo-apresentacao-ppgcc)
+
+
