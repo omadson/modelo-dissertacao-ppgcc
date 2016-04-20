@@ -19,33 +19,36 @@ O projeto conta com algumas facilidades:
 ## Utilizando o projeto
 Para melhor utilização do projeto, você deve seguir algumas boas práticas.
 
-Os capítulos devem ser separados em vários arquivos `.tex` e salvos no diretório `capitulos`. 
-Como no exemplo abaixo:
-
-```
-modelo-dissertacao-ppgcc
-├── capitulos
-│   ├── conclusao.tex
-│   ├── capitulo-exemplo.tex
-│   ├── ...
-│   └── introducao.tex
-├── dissertacao.tex
-├── informacoes.tex
-...
-├── README.md
-└── referencias.bib
-```
-Assim como as imagens e gráficos devem ser colocados no diretório `figuras/imagens` e
-`figuras/graficos` respectivamente.
-
-Elementos pré-textuais devem residir no diretório `pretextual`, tais como o `resumo.tex`,
-`abstract.tex`, `dedicatoria.tex` entre outros já listados lá.
-
-Os diretórios `apendices` e `anexos` guardam os apêndices e anexos respectivamente.
-
 O arquivo `informacoes.tex` contém os dados relacionados ao seu trabalho, tais como, título,
 autor, área de concentração, orientador etc. Caso você não tenha um coorientador, basta
 apagar a linha referente.
+
+Cada capítulo deve ser salvo separadamente no diretório `capitulos`.
+
+Como no exemplo abaixo:
+
+	```
+	modelo-dissertacao-ppgcc
+	├── capitulos
+	│   ├── conclusao.tex
+	│   ├── capitulo-exemplo.tex
+	│   ├── ...
+	│   └── introducao.tex
+	├── dissertacao.tex
+	├── informacoes.tex
+	...
+	├── README.md
+	└── referencias.bib
+	```
+Imagens e gráficos devem ser colocados no diretório `figuras/imagens` e
+`figuras/graficos` respectivamente.
+
+Elementos pré-textuais devem residir no diretório `pretextual`, tais como o `resumo.tex`,
+`abstract.tex`, `dedicatoria.tex`, entre outros já listados lá.
+
+Os diretórios `apendices` e `anexos` guardam os apêndices e anexos respectivamente.
+ 
+As tabelas devem ser salvas no diretório `tabelas` e para adicionar uma tabela, basta inserir o comando `\includetable{<nome-da-tabela>}` dentro do arquivo que você está editando.
 
 O arquivo que deve ser compilado é o `dissertacao.tex`, após a compilação, você deve ter
 disponível no seu diretório de trabalho o arquivo `dissertacao.pdf`.
