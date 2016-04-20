@@ -11,3 +11,7 @@
 *.glo
 *.ist
 *.gz
+*.fdb_latexmk
+*.fls
+*.ilg
+*.ind
