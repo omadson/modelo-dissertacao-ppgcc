@@ -23,23 +23,21 @@ O arquivo `informacoes.tex` contém os dados relacionados ao seu trabalho, tais 
 autor, área de concentração, orientador etc. Caso você não tenha um coorientador, basta
 apagar a linha referente.
 
-Cada capítulo deve ser salvo separadamente no diretório `capitulos`.
+Cada capítulo deve ser salvo separadamente no diretório `capitulos`. Como no exemplo abaixo:
 
-Como no exemplo abaixo:
-
-	```
-	modelo-dissertacao-ppgcc
-	├── capitulos
-	│   ├── conclusao.tex
-	│   ├── capitulo-exemplo.tex
-	│   ├── ...
-	│   └── introducao.tex
-	├── dissertacao.tex
-	├── informacoes.tex
-	...
-	├── README.md
-	└── referencias.bib
-	```
+```
+modelo-dissertacao-ppgcc
+├── capitulos
+│   ├── conclusao.tex
+│   ├── capitulo-exemplo.tex
+│   ├── ...
+│   └── introducao.tex
+├── dissertacao.tex
+├── informacoes.tex
+...
+├── README.md
+└── referencias.bib
+```
 Imagens e gráficos devem ser colocados no diretório `figuras/imagens` e
 `figuras/graficos` respectivamente.
 
