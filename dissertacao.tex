@@ -61,8 +61,8 @@
 % Adicionado por Madson Dias
 % ---
 
-\usepackage{utils/ifce-dissertation} 					% Pacote com informações da customização
-\graphicspath{ {figures/graphs/} {figures/images/}}  	% Inclusão dos paths para imagens
+\usepackage{utils/ifce-modelo} 					% Pacote com informações da customização
+\graphicspath{ {figuras/graficos/} {figuras/imagens/}}  % Inclusão dos paths para imagens
 \usepackage{xstring} 									% Criar comandos com IF
 \usepackage{caption}
 \usepackage{subcaption}
@@ -102,7 +102,7 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\include{informations}
+\include{informacoes}
 
 % ---
 
@@ -200,8 +200,8 @@
 % ----------------------------------------------------------
 \textual
 
-\include{chapters/introduction} 			% Capítulo de introdução
-\include{chapters/exampleChapter} 			% Capitulo de exemplo
+\include{capitulos/introducao} 				% Capítulo de introdução
+\include{capitulos/capitulo-exemplo} 			% Capitulo de exemplo
 
 % ----------------------------------------------------------
 % Finaliza a parte no bookmark do PDF
@@ -213,7 +213,7 @@
 % ---
 % Conclusão
 % ---
-\include{chapters/conclusion} 				% Capítulo de introdução
+\include{capitulos/conclusao} 				% Capítulo de introdução
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -224,7 +224,7 @@
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
-\bibliography{references}
+\bibliography{referencias}
 
 % ----------------------------------------------------------
 % Glossário
@@ -246,10 +246,10 @@
 % Imprime uma página indicando o início dos apêndices
 \partapendices
 % Insere os apêndices
-\include{appendix/appendixA}
-\include{appendix/appendixB}
-%\include{appendix/appendixC}
-%\include{appendix/appendixD}
+\include{apendices/apendice-a}
+\include{apendices/apendice-b}
+%\include{apendices/apendice-c}
+%\include{apendices/apendice-d}
 
 
 
@@ -270,10 +270,10 @@
 % Imprime uma página indicando o início dos anexos
 \partanexos
 % Insere os anexos
-\include{attachments/attachmentA}
-\include{attachments/attachmentB}
-%\include{attachments/attachmentC}
-%\include{attachments/attachmentD}
+\include{anexos/anexo-a}
+\include{anexos/anexo-b}
+%\include{anexos/anexo-c}
+%\include{anexos/anexo-d}
 
 \end{anexosenv}
 
