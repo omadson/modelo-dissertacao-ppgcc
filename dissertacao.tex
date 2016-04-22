@@ -50,8 +50,8 @@
 % Pacotes básicos 
 % ---
 \usepackage{lmodern}			% Usa a fonte Latin Modern			
-\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
 \usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
 \usepackage{lastpage}			% Usado pela Ficha catalográfica
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
@@ -66,6 +66,17 @@
 \usepackage{xstring} 									% Criar comandos com IF
 \usepackage{caption}
 \usepackage{subcaption}
+%\usepackage[portuguese, ruled, linesnumbered]{utils/algorithm2e}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\include{utils/algoritmos}
+
+
+
+
+
+
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
@@ -183,6 +194,11 @@
 % inserir lista de tabelas
 \pdfbookmark[0]{\listtablename}{lot}
 \listoftables*
+\cleardoublepage
+% ---
+% inserir lista de algoritmos
+\pdfbookmark[0]{\listalgorithmname}{loa}
+\listofalgorithms
 \cleardoublepage
 % ---
 \input{pretextual/abreviacoes.tex}  			% Lista de abreviaturas e siglas

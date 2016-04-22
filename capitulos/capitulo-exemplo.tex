@@ -35,4 +35,17 @@
     \caption{Exemplo de gráfico}\label{fig:animals}
 \end{figure}
 % ------
+\lipsum[2]
+
+\begin{algorithm}
+\caption{Algoritmo de exemplo}\label{bogosort}
+  \begin{algorithmic}[1]
+  \Procedure{Bogosort}{array}
+    \While{\Not \Call{Está\_ordenado}{array}}
+    \State array $\gets$ \Call{Permutação\_aleatória}{array} \Comment{Isso vai demorar muito :(}
+    \EndWhile
+  \EndProcedure
+  \end{algorithmic}
+\end{algorithm}
+
 \lipsum[1]
