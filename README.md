@@ -51,6 +51,32 @@ As tabelas devem ser salvas no diretório `tabelas` e para adicionar uma tabela,
 O arquivo que deve ser compilado é o `dissertacao.tex`, após a compilação, você deve ter
 disponível no seu diretório de trabalho o arquivo `dissertacao.pdf`.
 
+## Facilitadores
+Facilitadores são comandos que facilitam o uso de outros comandos. Como por exemplo, a inclusão
+de imagens. Dois comandos foram criados para simplificar essa inclusão. Os comandos são
+`\figurasimples` e `\figuradupla`.
+
+O comando `\figurasimples` recebe 3 parâmetros. 
+
+```
+% sintaxe:
+\figurasimples{nome-do-arquivo}{Legenda da imagem}{tamanho}
+
+% exemplo:
+\figurasimples{logo-ifce-sem-nome}{Logotipo do IFCE sem nome}{4cm}
+```
+
+O comando `\figuradupla` recebe 4 parâmetros.
+```
+% sintaxe:
+\figuradupla{nome-do-arquivo-1}{Legenda da imagem 1}
+{nome-do-arquivo-2}{Legenda da imagem 2}
+
+% exemplo:
+\figuradupla{logo-ifce-sem-nome}{Logotipo do IFCE sem nome}
+{logo-ifce-padrao}{Logotipo do IFCE padrão}
+```
+
 ## Dúvidas?
  - [Madson Dias](http://github.com/omadson)
  - [Vitor Carvalho](http://github.com/vitorcarvalhoml)
