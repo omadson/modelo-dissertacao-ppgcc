@@ -21,8 +21,8 @@
 % ---
 
 % Comando novo para área de concentração
-\newcommand{\area}[1]{\def\area{#1}}
-\newcommand{\imprimirarea}{\area}
+\newcommand{\linha}[1]{\def\linha{#1}}
+\newcommand{\imprimirarea}{\linha}
 
 \newcommand{\nomeprofessorA}[1]{\def\nomeprofessorA{#1}}
 \newcommand{\imprimirnomeprofessorA}{\nomeprofessorA}
@@ -114,8 +114,8 @@
 \vspace*{\fill}
 
 \abntex@ifnotempty{\imprimirpreambulo}{%
-  \hspace{.45\textwidth}
-  \begin{minipage}{.5\textwidth}
+  \hspace{.4\textwidth}
+  \begin{minipage}{.55\textwidth}
   \SingleSpacing
   \imprimirpreambulo
   \end{minipage}%
@@ -148,9 +148,11 @@
 % -----
 % Não modificar as linhas abaixo!
 % -----
-\newcommand{\imprimirareaRotulo}{Área de Concentração:}
+\newcommand{\imprimirareaRotulo}{Linha de Pesquisa:}
 \instituicao{%
   Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE)
+  \par
+  Pró-Reitoria de Pesquisa, Pós-Graduação e Inovação (PRPI)
   \par
   Programa de Pós-Graduação em Ciência da Computação (PPGCC)}
 \tipotrabalho{Dissertação de Mestrado}
@@ -159,7 +161,7 @@ Dissertação submetida ao Programa de Pós-Graduação em Ciência da Computaç
 \newline \newline \imprimirareaRotulo~\imprimirarea}
 \local{Fortaleza -- CE}
 \newcommand{\imprimirinstituicaocapa}{INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO CEARÁ}
-\newcommand{\imprimirdepartamento}{DEPARTAMENTO DE TELEMÁTICA}
+\newcommand{\imprimirdepartamento}{PRÓ-REITORIA DE PESQUISA, PÓS-GRADUAÇÃO E INOVAÇÃO}
 \newcommand{\imprimirprograma}{PROGRAMA DE PÓS-GRADUAÇÃO EM CIÊNCIA DA COMPUTAÇÃO}
 \data{\today}
 
