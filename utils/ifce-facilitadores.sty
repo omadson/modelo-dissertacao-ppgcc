@@ -62,22 +62,63 @@
 % ---
 % add figura dupla 
 % ---
-\newcommand{\figuradupla}[4]{
-  \begin{figure}[H]
-    \begin{center}  
-      \begin{subfigure}[b]{.45\textwidth}
-        \includegraphics[width=\textwidth]{#1}
-        \caption{}
-        \label{fig:#1}
-      \end{subfigure}
-      ~
-      \begin{subfigure}[b]{.45\textwidth}
-        \includegraphics[width=\textwidth]{#3}
-        \caption{}
-        \label{fig:#3}
-      \end{subfigure}
+%\newcommand{\figuradupla}[4]{
+%  \begin{figure}[H]
+%    \begin{center}  
+%      \begin{subfigure}[b]{.45\textwidth}
+%        \includegraphics[width=\textwidth]{#1}
+%        \caption{}
+%        \label{fig:#1}
+%      \end{subfigure}
+%      ~
+%      \begin{subfigure}[b]{.45\textwidth}
+%        \includegraphics[width=\textwidth]{#3}
+%        \caption{}
+%        \label{fig:#3}
+%      \end{subfigure}
 
-    \end{center}
-    \caption{(a) #2; (b) #4.}
-  \end{figure}
+%   \end{center}
+%    \caption{(a) #2; (b) #4.}
+%  \end{figure}
+%}
+
+
+\NewDocumentCommand\figuradupla{ommmm}{
+\IfNoValueTF{#1}{
+\begin{figure}[H]
+  \begin{center}  
+    \caption{(a) #3; (b) #5.}
+    \begin{subfigure}[b]{.45\textwidth}
+      \includegraphics[width=\textwidth]{#2}
+      \caption{}
+      \label{fig:#2}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{.45\textwidth}
+      \includegraphics[width=\textwidth]{#4}
+      \caption{}
+      \label{fig:#4}
+    \end{subfigure} \par
+  Fonte: Próprio autor.
+  \end{center}
+\end{figure}
 }
+{
+\begin{figure}[H]
+  \begin{center}  
+    \caption{(a) #3; (b) #5.}
+    \begin{subfigure}[b]{.45\textwidth}
+      \includegraphics[width=\textwidth]{#2}
+      \caption{}
+      \label{fig:#2}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{.45\textwidth}
+      \includegraphics[width=\textwidth]{#4}
+      \caption{}
+      \label{fig:#4}
+    \end{subfigure} \par
+  Fonte: \citeauthor{#1}, \citeyear{#1}.
+  \end{center}
+\end{figure}
+}\xspace}
