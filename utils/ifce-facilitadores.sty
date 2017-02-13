@@ -27,15 +27,37 @@
 % ---
 % add figura simples 
 % ---
-\newcommand{\figurasimples}[3]{
-  \begin{figure}[H]
-    \begin{center}
-      \includegraphics[width=#3]{#1}
-      \caption{#2}
-      \label{fig:#1}
-    \end{center}
-  \end{figure}
+\usepackage{xparse}
+\usepackage{xspace}
+\NewDocumentCommand\figurasimples{ommm}{
+\IfNoValueTF{#1}{
+\begin{figure}[H]
+  \begin{center}
+    \caption{#3}\label{fig:#2}
+    \includegraphics[width=#4]{#2} \par \vspace{0.5em}
+    Fonte: Próprio autor.
+  \end{center}
+\end{figure}
 }
+{
+\begin{figure}[H]
+  \begin{center}
+    \caption{#3}\label{fig:#2}
+    \includegraphics[width=#4]{#2} \par \vspace{0.5em}
+    Fonte: \citeauthor{#1}, \citeyear{#1}.
+  \end{center}
+\end{figure}
+}\xspace}
+
+%\newcommand{\figurasimples}[3]{
+%  \begin{figure}[H]
+%    \begin{center}
+%      \includegraphics[width=#3]{#1}
+%      \caption{#2}
+%      \label{fig:#1}
+%    \end{center}
+%  \end{figure}
+%}
 
 % ---
 % add figura dupla 

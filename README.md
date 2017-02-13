@@ -60,10 +60,15 @@ O comando `\figurasimples` recebe 3 parâmetros.
 
 ```
 % sintaxe:
-\figurasimples{nome-do-arquivo}{Legenda da imagem}{tamanho}
+\figurasimples{nome-do-arquivo}{Legenda da imagem sem fonte}{tamanho}
+ou
+\figurasimples[chave-da-fonte]{nome-do-arquivo}{Legenda da imagem com fonte}{tamanho}
 
-% exemplo:
+% exemplo: figura sem fonte:
 \figurasimples{logo-ifce-sem-nome}{Logotipo do IFCE sem nome}{4cm}
+
+% exemplo: figura com fonte:
+\figurasimples[talbot2012]{logo-ifce-sem-nome}{Logotipo do IFCE sem nome}{4cm}
 ```
 
 O comando `\figuradupla` recebe 4 parâmetros.
