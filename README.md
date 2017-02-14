@@ -46,7 +46,20 @@ Elementos pré-textuais devem residir no diretório `pretextual`, tais como o `r
 
 Os diretórios `apendices` e `anexos` guardam os apêndices e anexos respectivamente.
 
-As tabelas devem ser salvas no diretório `tabelas` e para adicionar uma tabela, basta inserir o comando `\includetable{<nome-da-tabela>}` dentro do arquivo que você está editando.
+As tabelas devem ser salvas no diretório `tabelas` e para adicionar uma tabela, basta inserir o comando 
+```latex
+% sintaxe:
+\tabela{nome-do-arquivo}{Título da tabela sem fonte}{escala-da-fonte}
+ou
+\tabela[chave-da-fonte]{nome-do-arquivo}{Título da tabela com fonte}{escala-da-fonte}
+
+% exemplo: tabela sem fonte:
+\tabela{tabela-exemplo}{Lista de bases de dados usados nesse trabalho}{1}
+
+% exemplo: tabela com fonte:
+\tabela[talbot2012]{funcoes-de-kernel}{Funções de kernel}{0.9}
+```
+O arquivo de tabel deve conter apenas o ambiente `tabular` (verificar o exemplo contido no modelo).
 
 O arquivo que deve ser compilado é o `dissertacao.tex`, após a compilação, você deve ter
 disponível no seu diretório de trabalho o arquivo `dissertacao.pdf`.
@@ -58,7 +71,7 @@ de imagens. Dois comandos foram criados para simplificar essa inclusão. Os coma
 
 O comando `\figurasimples` recebe 3 parâmetros. 
 
-```
+```latex
 % sintaxe:
 \figurasimples{nome-do-arquivo}{Legenda da imagem sem fonte}{tamanho}
 ou
