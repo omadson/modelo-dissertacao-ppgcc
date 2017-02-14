@@ -126,17 +126,17 @@
 
 \NewDocumentCommand\tabela{ommm}{
 \IfNoValueTF{#1}{
-\begin{table}[h] \scalefont{#4}
-  \caption{#3.}\label{tab:#2}
+\begin{table}[!htbp] \scalefont{#4}
   \begin{center}
+    \caption{#3.}\label{tab:#2}
     \input{tabelas/#2} \par \vspace{0.5em}
     Fonte: Próprio autor.
   \end{center}
 \end{table}
 }{
-\begin{table}[h] \scalefont{#4}
-  \caption{#3.}\label{tab:#2}
+\begin{table}[!htbp] \scalefont{#4}
   \begin{center}
+    \caption{#3.}\label{tab:#2}
     \input{tabelas/#2} \par \vspace{0.5em}
     Fonte: \citeauthor{#1}, \citeyear{#1}.
   \end{center}
