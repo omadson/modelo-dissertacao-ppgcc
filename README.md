@@ -46,6 +46,8 @@ Elementos pré-textuais devem residir no diretório `pretextual`, tais como o `r
 
 Os diretórios `apendices` e `anexos` guardam os apêndices e anexos respectivamente.
 
+O arquivo que deve ser compilado é o `dissertacao.tex`, após a compilação, você deve ter disponível no seu diretório de trabalho o arquivo `dissertacao.pdf`.
+
 ## Facilitadores
 
 Facilitadores são comandos que facilitam o uso de outros comandos. Como por exemplo, a inclusão de imagens. Dois comandos foram criados para simplificar essa inclusão. Os comandos são
@@ -91,9 +93,6 @@ ou
 \tabela[talbot2012]{funcoes-de-kernel}{Funções de kernel}{0.9}
 ```
 O arquivo de tabela deve conter apenas o ambiente `tabular` (verificar o exemplo contido no modelo).
-
-O arquivo que deve ser compilado é o `dissertacao.tex`, após a compilação, você deve ter
-disponível no seu diretório de trabalho o arquivo `dissertacao.pdf`.
 
 ## Dúvidas?
  - [Madson Dias](http://github.com/omadson)
